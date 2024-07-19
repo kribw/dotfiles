@@ -4,9 +4,10 @@ dotfiles for Linux applications.
 ### Stow
 - Using [GNU Stow](https://www.gnu.org/software/stow/) to manage symlinks.
 - Stow target will be parent directory by default.
-```git clone https://github.com/kribw/dotfiles.git $HOME```
 
-```python
+```git clone https://github.com/kribw/dotfiles.git $HOME/dotfiles```
+
+```
 # -- Stow package(s)
 stow .
 
