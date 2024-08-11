@@ -70,7 +70,17 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git fzf)
+plugins=(
+	git
+	fzf
+	zsh-autosuggestions
+  zsh-syntax-highlighting
+)
+
+# Plugin settings
+DISABLE_FZF_AUTO_COMPLETION="false"
+export FZF_BASE=/usr/bin/fzf
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -111,3 +121,4 @@ alias fuzzyvim='nvim $(fzf -m --preview="batcat --color=always {}")'
 
 # Add time and username to prompt 
 PROMPT="%D{%L:%M} %{$fg[cyan]%}${USER} ${PROMPT}" 
+eval "$(starship init zsh)"
