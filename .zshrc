@@ -120,5 +120,5 @@ source $ZSH/oh-my-zsh.sh
 alias fuzzyvim='nvim $(fzf -m --preview="batcat --color=always {}")'
 
 # Add time and username to prompt 
-PROMPT="%D{%L:%M} %{$fg[cyan]%}${USER} ${PROMPT}" 
+# PROMPT="%D{%L:%M} %{$fg[cyan]%}${USER} ${PROMPT}" 
 eval "$(starship init zsh)"
