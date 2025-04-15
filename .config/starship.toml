@@ -1,30 +1,134 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
+# format = """
+# [](surface0)\
+# $os\
+# $username\
+# [](bg:peach fg:surface0)\
+# $directory\
+# [](fg:peach bg:green)\
+# $git_branch\
+# $git_status\
+# [](fg:green bg:teal)\
+# $c\
+# $rust\
+# $golang\
+# $nodejs\
+# $php\
+# $java\
+# $kotlin\
+# $haskell\
+# $python\
+# [](fg:teal bg:blue)\
+# $docker_context\
+# [](fg:blue bg:blue)\
+# $time\
+# [ ](fg:blue)\
+# $line_break$character"""
+
+# format = """
+# \\[$time\\] \
+# $username@\
+# """
+
+# Which is equivalent to
 format = """
-[](surface0)\
-$os\
 $username\
-[](bg:peach fg:surface0)\
+$hostname\
+$localip\
+$shlvl\
+$singularity\
+$kubernetes\
 $directory\
-[](fg:peach bg:green)\
+$vcsh\
+$fossil_branch\
+$fossil_metrics\
 $git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
 $git_status\
-[](fg:green bg:teal)\
-$c\
-$rust\
-$golang\
-$nodejs\
-$php\
-$java\
-$kotlin\
-$haskell\
-$python\
-[](fg:teal bg:blue)\
+$hg_branch\
+$pijul_channel\
 $docker_context\
-[](fg:blue bg:blue)\
+$package\
+$c\
+$cmake\
+$cobol\
+$daml\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$fennel\
+$gleam\
+$golang\
+$guix_shell\
+$haskell\
+$haxe\
+$helm\
+$java\
+$julia\
+$kotlin\
+$gradle\
+$lua\
+$nim\
+$nodejs\
+$ocaml\
+$opa\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$quarto\
+$raku\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$solidity\
+$swift\
+$terraform\
+$typst\
+$vlang\
+$vagrant\
+$zig\
+$buf\
+$nix_shell\
+$conda\
+$meson\
+$spack\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$nats\
+$direnv\
+$env_var\
+$crystal\
+$custom\
+$sudo\
+$cmd_duration\
+$line_break\
+$jobs\
+$battery\
 $time\
-[ ](fg:blue)\
-$line_break$character"""
+$status\
+$os\
+$container\
+$shell\
+$character"""
+
+# format = """
+# \\[$time\\] $sudo$username@$hostname $directory$python$git_branch$git_status
+# $character"""
+
+right_format = "$os"
 
 palette = 'catppuccin_mocha'
 
@@ -97,7 +201,12 @@ RedHatEnterprise = "󱄛"
 show_always = true
 style_user = "bg:surface0 fg:text"
 style_root = "bg:surface0 fg:text"
-format = '[ $user ]($style)'
+format = '[$user]($style)'
+
+[hostname]
+ssh_only = false
+format = "[$hostname]($style)"
+style = "cyan bold"
 
 [directory]
 style = "fg:mantle bg:peach"
@@ -175,7 +284,7 @@ format = '[[ $symbol( $context) ](fg:#83a598 bg:color_bg3)]($style)'
 disabled = false
 time_format = "%R"
 style = "bg:peach"
-format = '[[  $time ](fg:mantle bg:blue)]($style)'
+format = '[[$time](fg:sky)]($style)'
 
 [line_break]
 disabled = false
