@@ -209,7 +209,7 @@ format = "[$hostname]($style)"
 style = "cyan bold"
 
 [directory]
-# style = "fg:mantle bg:peach"
+style = "fg:mantle bg:peach"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -283,8 +283,8 @@ format = '[[ $symbol( $context) ](fg:#83a598 bg:color_bg3)]($style)'
 [time]
 disabled = false
 time_format = "%R"
-style = "bg:peach"
-format = '[[$time](fg:sky)]($style)'
+style = "bg:blue"
+format = '[[$time](fg:black bg:blue)]($style)'
 
 [line_break]
 disabled = false
