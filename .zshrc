@@ -119,6 +119,7 @@ source $ZSH/oh-my-zsh.sh
 # alias clearswp="rm **/.
 alias fuzzyvim='nvim $(fzf -m --preview="batcat --color=always {}")'
 alias nvim="/home/topshotta/Downloads/lazyvim/nvim-linux-x86_64.appimage"
+alias ll="ls -lah"
 # Add time and username to prompt 
 # PROMPT="%D{%L:%M} %{$fg[cyan]%}${USER} ${PROMPT}" 
 
