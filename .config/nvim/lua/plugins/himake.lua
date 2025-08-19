@@ -1,1 +1,1 @@
-/home/topshotta/Code/lua/himake.nvim
+/home/topshotta/Code/lua/himake.nvim/himake.lua
