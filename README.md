@@ -16,4 +16,9 @@ stow -D .
 ```
 
 ### Fonts
-(Optional): Install [RobotoMono Nerd Font](https://www.nerdfonts.com/font-downloads) for Neovim icons.
+(Optional): Install a [nerd font](https://www.nerdfonts.com/font-downloads) for icons! 
+
+Current preference: JetBrainsMono Nerd Font
+
+Other cool fonts:
+- RobotoMono Nerd Font
