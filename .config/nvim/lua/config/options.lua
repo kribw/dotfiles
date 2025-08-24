@@ -5,3 +5,5 @@ vim.g.snacks_animate = false
 
 local opt = vim.opt
 opt.wrap = true
+
+vim.g.root_spec = { "cwd" }
