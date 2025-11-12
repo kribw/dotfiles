@@ -21,6 +21,7 @@ else
   export EDITOR='nvim'
 fi
 
+export PAGER="less"
 
 alias fuzzyvim='nvim $(fzf -m --preview="batcat --color=always {}")'
 alias ll="ls -lah"
