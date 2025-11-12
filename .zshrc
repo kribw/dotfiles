@@ -12,6 +12,7 @@ plugins=(
 
 DISABLE_FZF_AUTO_COMPLETION="false"
 export FZF_BASE=/usr/bin/fzf
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk/
 
 source $ZSH/oh-my-zsh.sh
 
