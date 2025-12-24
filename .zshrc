@@ -26,6 +26,7 @@ export PAGER="less"
 
 alias fuzzyvim='nvim $(fzf -m --preview="batcat --color=always {}")'
 alias ll="ls -lah"
+alias l="ls -lh"
 
 . "$HOME/.cargo/env"
 
