@@ -1,7 +1,13 @@
 # dotfiles
+
+- [dotfiles](#dotfiles)
+  - [Stow](#stow)
+  - [Fonts](#fonts)
+
 dotfiles for Linux applications.
 
-### Stow
+## Stow
+
 - Using [GNU Stow](https://www.gnu.org/software/stow/) to manage symlinks.
 - Stow target will be parent directory by default.
 
@@ -11,14 +17,16 @@ dotfiles for Linux applications.
 # -- Stow package(s)
 stow .
 
-# Delete (unstow) package(s) 
+# Delete (unstow) package(s)
 stow -D .
 ```
 
-### Fonts
-(Optional): Install a [nerd font](https://www.nerdfonts.com/font-downloads) for icons! 
+## Fonts
+
+(Optional): Install a [nerd font](https://www.nerdfonts.com/font-downloads) for icons!
 
 Current preference: JetBrainsMono Nerd Font
 
 Other cool fonts:
+
 - RobotoMono Nerd Font
