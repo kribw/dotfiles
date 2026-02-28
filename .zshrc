@@ -4,10 +4,10 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 plugins=(
-	git
-	fzf
-	zsh-autosuggestions
-  	zsh-syntax-highlighting
+  git
+  fzf
+  zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 DISABLE_FZF_AUTO_COMPLETION="false"
@@ -26,6 +26,7 @@ export PAGER="less"
 
 alias fuzzyvim='nvim $(fzf -m --preview="batcat --color=always {}")'
 alias ll="ls -lah"
+alias l="ls -lh"
 
 . "$HOME/.cargo/env"
 
