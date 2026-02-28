@@ -1,0 +1,91 @@
+{
+    "editor.fontFamily": "'RobotoMono Nerd Font'",
+    "editor.fontSize": 15,
+    "editor.cursorStyle": "line",
+    "editor.suggestSelection": "first",
+    "python.languageServer": "Pylance",
+    "python.analysis.extraPaths": [],
+    "window.zoomLevel": 1,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "window.confirmSaveUntitledWorkspace": false,
+    "json.schemas": [],
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.tsserver.log": "verbose",
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "redhat.telemetry.enabled": false,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[shellscript]": {
+        "editor.defaultFormatter": "mads-hartmann.bash-ide-vscode"
+    },
+    "git.openRepositoryInParentFolders": "never",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    // "clangd.path": "clangd",
+    "clangd.arguments": [
+        "--log=verbose",
+        // "--pretty",
+        "--clang-tidy",
+        "--header-insertion=iwyu",
+        "--enable-config",
+        // "--query-driver=g++",
+        "-j=24",
+        "--background-index-priority=normal",
+        "--malloc-trim",
+        "--pch-storage=memory"
+    ],
+    "clangd.fallbackFlags": ["--std=c++26"],
+    "files.watcherExclude": {
+        "**/.git/**": true,
+        "**/.cache/**": true,
+        "**/.derived/**": true,
+        "**/export/**": true
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format",
+        "editor.tabSize": 3
+    },
+    "C_Cpp.default.compilerPath": "clangd",
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "lldb.suppressUpdateNotifications": true,
+    "C_Cpp.autocomplete": "disabled",
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    "C_Cpp.codeAnalysis.clangTidy.path": "clang-tidy",
+    "python.defaultInterpreterPath": "venv",
+    "editor.minimap.enabled": false,
+    "symlink-follow.autoFollow": true,
+    "symlink-follow.onlyFollowWithinWorkspace": false,
+    "symlink-follow.showFileInExplorerAfterSymlinkFollow": true,
+    // "explorer.excludeGitIgnore": false,
+    "explorer.excludeGitIgnore": true,
+    "chat.commandCenter.enabled": false,
+    "editor.renderWhitespace": "none",
+    "terminal.integrated.stickyScroll.enabled": false,
+    "lldb-dap.executable-path": "lldb-dap"
+}
