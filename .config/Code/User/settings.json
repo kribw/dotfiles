@@ -17,19 +17,27 @@
     "git.confirmSync": false,
     "git.autofetch": true,
     "redhat.telemetry.enabled": false,
+    // Install ox-tools with npm globally and set path here
+    // check .oxlintrc.json / oxlint.config.ts docs for which plugins to enable
+    //"oxc.path.oxfmt": "",
+    //"oxc.path.oxlint": "",
+    //"oxc.path.tsgolint": "",
     "[typescriptreact]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+        "editor.defaultFormatter": "oxc.oxc-vscode"
     },
     "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+        "editor.defaultFormatter": "oxc.oxc-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "oxc.oxc-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "oxc.oxc-vscode"
     },
     "[shellscript]": {
         "editor.defaultFormatter": "mads-hartmann.bash-ide-vscode"
     },
     "git.openRepositoryInParentFolders": "never",
-    "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
     "javascript.updateImportsOnFileMove.enabled": "always",
     "diffEditor.ignoreTrimWhitespace": false,
     "[python]": {
@@ -59,10 +67,12 @@
         "**/export/**": true
     },
     "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "oxc.oxc-vscode"
+        //"editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "oxc.oxc-vscode"
+        //"editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
@@ -82,10 +92,14 @@
     "symlink-follow.autoFollow": true,
     "symlink-follow.onlyFollowWithinWorkspace": false,
     "symlink-follow.showFileInExplorerAfterSymlinkFollow": true,
-    // "explorer.excludeGitIgnore": false,
-    "explorer.excludeGitIgnore": true,
+    "explorer.excludeGitIgnore": false,
+    //"explorer.excludeGitIgnore": true,
     "chat.commandCenter.enabled": false,
     "editor.renderWhitespace": "none",
     "terminal.integrated.stickyScroll.enabled": false,
-    "lldb-dap.executable-path": "lldb-dap"
+    "lldb-dap.executable-path": "lldb-dap",
+    "workbench.colorTheme": "Dark Modern",
+    "docker.extension.enableComposeLanguageServer": false,
+    "js/ts.tsserver.log": "off",
+    "js/ts.experimental.useTsgo": true
 }
